@@ -1,0 +1,41 @@
+
+README (RInhibit)
+
+    RInhibit is a simplified Rust port of the Inhibit project which is used to
+    prevent the accidental execution of critical commands (e.g. to shutdown or
+    reboot the system). For details see:
+
+        https://github.com/urbanware-org/inhibit
+
+    Other than Inhibit, this port only provides its base functionality without
+    any customization options (such as custom header or colors) via config
+    file. So, there is just the hostname to confirm the command execution (no
+    random strings) and there also is no functionality to prevent the control
+    of services via 'systemctl' the way Inhibit has.
+
+    This repository does not include binaries. So, in order to use RInhibit,
+    you have to compile it using 'cargo'. RInhibit has only one dependency
+    which can be installed as follows:
+
+        cargo add hostname
+
+    Then use the following commands to compile:
+
+        cargo build
+        cargo run       (can be used alternatively to compile and run)
+
+    This will create the sub-directories 'target/debug' where latter contains
+    the 'rinhibit' binary, which should also be executable. If not (for
+    whatever reason) you can set the executable flag as follows:
+
+        chmod +x rinhibit
+
+    The project was written on Linux and should run on any Unix-like system
+    (without any warranty).
+
+    RInhibit is and was not intended to be or become an actual alternative to
+    Inhibit. It is just a simple a port to the Rust programming language for
+    experimental as well as (more or less) educational purposes.
+
+    Feel free to fork.
+
