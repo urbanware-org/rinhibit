@@ -30,6 +30,12 @@ README (RInhibit)
 
         chmod +x rinhibit
 
+    Usage examples:
+    
+        rinhibit --version      (to return the version number)
+        
+        rinhibit reboot         (to inhibit e.g. the 'reboot' command)
+
     The project was written on Linux and should run on any Unix-like system
     (without any warranty).
 
