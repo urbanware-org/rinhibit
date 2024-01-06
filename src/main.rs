@@ -73,6 +73,7 @@ fn main() {
             .expect("Failed to execute the given command");
     } else {
         println!("Confirmation failed. Process canceled.\n");
+        std::process::exit(1);
     }
 }
 
