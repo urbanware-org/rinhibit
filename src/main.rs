@@ -23,7 +23,7 @@ fn get_binary_name() -> Option<String> {
 }
 
 fn main() {
-    let version = "1.0.0";
+    let version = "1.0.1";
     let usage = "usage: ".to_owned()
                         + &get_binary_name().unwrap()
                         + " [--version] \"COMMAND\"";
