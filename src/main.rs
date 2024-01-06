@@ -1,7 +1,7 @@
 /*
     RInhibit - Prevent accidental execution of certain commands
     Simplified Rust port of the Inhibit project
-    Copyright (c) 2023 by Ralf Kilian
+    Copyright (c) 2024 by Ralf Kilian
     Distributed under the MIT License (https://opensource.org/licenses/MIT)
 
     GitHub: https://github.com/urbanware-org/rinhibit
